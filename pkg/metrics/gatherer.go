@@ -124,9 +124,11 @@ func CollectFamily(familyName string) {
 }
 
 func ParseFamily(metricName string) string {
-	for family := range families.Iter() {
+	fms := families.Iterator()
+	for family := range fms.C {
 		s := family.(string)
 		if strings.Index(metricName, s+"_") == 0 {
+			fms.Stop()
 			return s
 		}
 	}
