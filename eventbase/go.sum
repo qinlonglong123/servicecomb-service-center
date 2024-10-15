@@ -140,6 +140,7 @@ github.com/go-chassis/cari v0.5.1-0.20210823023004-74041d1363c4/go.mod h1:av/19f
 github.com/go-chassis/cari v0.6.0/go.mod h1:mSDRCOQXGmlD69A6NG0hsv0UP1xbVPtL6HCGI6X1tqs=
 github.com/go-chassis/cari v0.9.1-0.20240328115504-88da93faaca7 h1:XlCtMt+l1hcpfbiFRoSYWYr0q6Ak9g/UGFXSKoqmbT4=
 github.com/go-chassis/cari v0.9.1-0.20240328115504-88da93faaca7/go.mod h1:ibqLyh+Q+1n9PlldW3glD9G+2s/yeSyVMCCkQWKRwuE=
+github.com/go-chassis/etcdadpt v0.3.2/go.mod h1:HnRRpIrVEVNWobkiCvG2EHLWKKZ+L047EcI29ma2zA4=
 github.com/go-chassis/etcdadpt v0.5.3-0.20240328092602-984e34b756fe h1:peLHEt3wzab6nKVcmcu0qkj1+ZXK6D1ymtiyyMBv/XA=
 github.com/go-chassis/etcdadpt v0.5.3-0.20240328092602-984e34b756fe/go.mod h1:HV8OZ1Npu+lttD+pJA5nUxWZR3/SBFetTh7w8nYFkUA=
 github.com/go-chassis/foundation v0.2.2-0.20201210043510-9f6d3de40234/go.mod h1:2PjwqpVwYEVaAldl5A58a08viH8p27pNeYaiE3ZxOBA=
@@ -367,7 +368,7 @@ github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
 github.com/kr/text v0.2.0/go.mod h1:eLer722TekiGuMkidMxC/pM04lWEeraHUUmBw8l2grE=
 github.com/leodido/go-urn v1.2.1/go.mod h1:zt4jvISO2HfUBqxjfIshjdMTYS56ZS/qv49ictyFfxY=
-github.com/go-chassis/etcdadpt v0.3.2/go.mod h1:HnRRpIrVEVNWobkiCvG2EHLWKKZ+L047EcI29ma2zA4=
+github.com/little-cui/etcdadpt v0.3.2/go.mod h1:HnRRpIrVEVNWobkiCvG2EHLWKKZ+L047EcI29ma2zA4=
 github.com/magiconair/properties v1.8.1/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/mailru/easyjson v0.0.0-20160728113105-d5b7844b561a/go.mod h1:C1wdFJiN94OJF2b5HbByQZoLdCWB1Yqtg26g4irojpc=
 github.com/markbates/oncer v0.0.0-20181203154359-bf2de49a0be2/go.mod h1:Ld9puTsIW75CHf65OeIOkyKbteujpZVXDpWK6YGZbxE=
