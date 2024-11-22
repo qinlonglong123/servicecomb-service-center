@@ -25,7 +25,9 @@ import (
 
 	"github.com/go-chassis/go-chassis/v2/server/restful"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
+	"google.golang.org/grpc/status"
 
 	"github.com/apache/servicecomb-service-center/client"
 	"github.com/apache/servicecomb-service-center/pkg/log"
@@ -136,8 +138,16 @@ func getPeerStatus(peerInfo *PeerInfo) string {
 		}))
 	}
 	reply, err := set.EventServiceClient.Health(ctx, &v1sync.HealthRequest{})
-	if err != nil || reply == nil {
+	if err != nil {
+		if s, ok := status.FromError(err); ok && s.Code() == codes.Unimplemented {
+			log.Error("get peer health failed", err)
+			return rpc.HealthStatusPeerUnimplemented
+		}
 		log.Error("get peer health failed", err)
+		return rpc.HealthStatusAbnormal
+	}
+	if reply == nil {
+		log.Error("get peer health failed, reply is nil, but no error", err)
 		return rpc.HealthStatusAbnormal
 	}
 	reportClockDiff(peerInfo.Peer.Name, local, reply.LocalTimestamp)

@@ -30,10 +30,11 @@ import (
 )
 
 const (
-	HealthStatusConnected = "CONNECTED"
-	HealthStatusAbnormal  = "ABNORMAL"
-	HealthStatusClose     = "CLOSE"
-	HealthStatusAuthFail  = "AuthFail"
+	HealthStatusConnected         = "CONNECTED"
+	HealthStatusAbnormal          = "ABNORMAL"
+	HealthStatusClose             = "CLOSE"
+	HealthStatusAuthFail          = "AuthFail"
+	HealthStatusPeerUnimplemented = "UNIMPLEMENTED"
 
 	RbacAllowedAccountName = "sync-user"
 	RbacAllowedRoleName    = "sync-admin"
