@@ -108,8 +108,6 @@ func (service *Service) dump(ctx context.Context, option string, resp *model.Dum
 		resp.Cache = &cache
 	case "all":
 		service.dump(ctx, "info", resp)
-		service.dump(ctx, "config", resp)
-		service.dump(ctx, "env", resp)
 		service.dump(ctx, "cache", resp)
 	}
 }
