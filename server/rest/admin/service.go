@@ -98,10 +98,6 @@ func (service *Service) dump(ctx context.Context, option string, resp *model.Dum
 	switch option {
 	case "info":
 		resp.Info = version.Ver()
-	case "config":
-		resp.AppConfig = configs
-	case "env":
-		resp.Environments = environments
 	case "cache":
 		var cache model.Cache
 		service.dumpAllCache(ctx, &cache)
